@@ -1,0 +1,65 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: lightblue;
+  color: lightpink;
+  padding: 25px;
+  text-align: center;
+  text-shadow: 2px 2px 4px black;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 18px;
+  color: lightpink;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.receta {
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  flex: 1;
+}
+
+.receta img {
+  max-width: 50%;
+}
+
+.flex-container {
+  display: flex;
+  /*flex-direction: row-reverse;
+    flex-wrap: nowrap;*/
+  flex-flow: row nowrap;
+  gap: 10px;
+  order: 2; /* esto se aplica en propiedades hijo, ejemplo: tenes caja 1, 2 y 3, lo aplicas en caja3*/
+}
+
+footer {
+  background-color: black;
+  color: lightpink;
+  text-align: center;
+  padding: 10px;
+}
