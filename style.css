@@ -19,12 +19,12 @@ nav ul {
 
 nav li {
   display: inline;
-  margin-right: 20px;
+  margin-right: 7px;
 }
 
 nav a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 17px;
   color: lightpink;
   font-weight: bold;
 }
@@ -46,6 +46,37 @@ main {
 
 .receta img {
   max-width: 50%;
+  margin-bottom: 10px;
+}
+
+.recetaguia {
+  background-color: lightpink;
+  font-weight: bold;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+  width: 1500px;
+  height: 1000px;
+}
+
+.recetaguia img {
+  max-width: 50%;
+  margin-bottom: 10px;
+}
+
+.cajapizza {
+  display: flex;
+  border: 8px solid lightblue;
+  margin: 2px;
+  padding: 1px;
+  flex: 1;
+}
+
+.cajapizza2 {
+  border: 4px solid black;
+  height: 300px;
+  margin: 4px;
+  padding: 5px;
 }
 
 .flex-container {
