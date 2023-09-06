@@ -37,6 +37,7 @@ main {
 }
 
 .receta {
+  background-color: lightpink;
   border: 2px solid black;
   margin: 10px;
   padding: 10px;
@@ -63,6 +64,8 @@ main {
 }
 
 .recetaguia img {
+  border: 6px solid lightblue;
+  border-radius: 10px;
   max-width: 50%;
   margin-bottom: 10px;
 }
