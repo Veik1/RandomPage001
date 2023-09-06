@@ -31,9 +31,11 @@ nav a {
 
 main {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* estamos teniendo un bardo con esto, tendremos que aplicar media queries i guess */
   justify-content: space-around;
-  padding: 20px;
+  padding: 6px;
+  background-color: lightblue;
+  background-image: url("img/foodbackground.jpg");
 }
 
 .receta {
@@ -56,10 +58,8 @@ main {
   border: 2px solid black;
   margin: 2px;
   padding: 5px;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  overflow: auto;
+  width: auto;
+  height: auto;
   box-sizing: content-box;
 }
 
@@ -71,25 +71,22 @@ main {
 }
 
 .caja {
-  position: absolute;
   display: flex;
   flex-direction: column;
   border: 8px solid lightblue;
   margin: 2px;
   padding: 1px;
-  max-width: auto;
-  max-height: auto;
-  box-sizing: border-box;
+  width: auto;
+  height: auto;
 }
 
 .caja2 {
-  max-width: 100%;
-  max-height: 100%;
+  width: auto;
+  height: auto;
   border: 4px solid black;
   border-radius: 10px;
   margin: 5px;
   padding: 4px;
-  box-sizing: border-box;
 }
 
 .caja2 img {
@@ -107,18 +104,18 @@ main {
   font-weight: bold;
 }
 
-.flex-container {
+/*.flex-container {
   display: flex;
-  /*flex-direction: row-reverse;
-    flex-wrap: nowrap;*/
+  /flex-direction: row-reverse;
+    flex-wrap: nowrap;
   flex-flow: row nowrap;
   gap: 10px;
-  order: 2; /* esto se aplica en propiedades hijo, ejemplo: tenes caja 1, 2 y 3, lo aplicas en caja3*/
-}
+  order: 2; /* esto se aplica en propiedades hijo, ejemplo: tenes caja 1, 2 y 3, lo aplicas en caja3/
+} */
 
 footer {
   background-color: black;
   color: lightpink;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
 }
