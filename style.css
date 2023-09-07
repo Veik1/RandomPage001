@@ -39,6 +39,7 @@ main {
   background-color: lightblue;
   background-image: url("img/foodbackground.jpg");
   box-sizing: border-box;
+  overflow-y: auto;
 }
 
 .contenedor-grid {
