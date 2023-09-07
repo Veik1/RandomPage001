@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin: 0;
   padding: 0;
@@ -32,8 +33,6 @@ nav a {
 
 main {
   min-height: 100%;
-  display: flex; /* estamos teniendo un bardo con esto, tendremos que aplicar media queries i guess */
-  flex-wrap: wrap; 
   justify-content: space-around;
   padding: 6px;
   background-color: lightblue;
@@ -41,18 +40,25 @@ main {
   box-sizing: border-box;
 }
 
+.contenedor-grid {
+  display: grid; /* tuve un bardo con esto, porque estaba puesto como flex, solucionamos el problema de la vista con media queries y eso */
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  grid-gap: 2px; /* Espacio entre elementos */
+}
+
 .receta {
   background-color: lightpink;
   border: 2px solid black;
-  margin: 10px;
-  padding: 10px;
+  margin: 8px;
+  padding: 20px;
   text-align: center;
   flex: 1;
-  align-self: flex-start;
-}
+  align-self: stretch;
+} /* Recetas tomaría el rol de elemento-grid */
 
 .receta img {
-  max-width: 50%;
+  border: 6px solid lightblue;
+  max-width: 55%;
   margin-bottom: 10px;
 }
 
@@ -116,6 +122,24 @@ main {
   gap: 10px;
   order: 2; /* esto se aplica en propiedades hijo, ejemplo: tenes caja 1, 2 y 3, lo aplicas en caja3/
 } */
+
+@media (min-width: 1920px) {
+  .receta {
+    width: calc(33.33% - 16px); /* Tres columnas */
+  }
+}
+
+@media (max-width: 720px) {
+  .receta {
+    width: calc(50% - 16px); /* Dos columnas */
+  }
+}
+
+@media (max-width: 480px) {
+  .receta {
+    width: 100%; /* Una columna */
+  }
+}
 
 footer {
   background-color: black;
