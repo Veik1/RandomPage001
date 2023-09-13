@@ -104,7 +104,36 @@ main {
   padding: 4px;
 }
 
-.caja2 img {
+.cajaFila {
+  display: flex;
+  flex-direction: row;
+  margin: 2px;
+  padding: 1px;
+  width: auto;
+  height: auto;
+}
+
+/*.card-body {   ta broken, dsps lo fixeo
+  width: auto;
+  height: auto;
+  border: 2px solid black;
+  background-color: black;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 4px;
+}*/
+
+.card{
+  background-color: lightblue;
+}
+
+.card-body{
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+}
+
+.card-body img {
   height: auto;
   max-width: 170px;
 }
@@ -116,6 +145,14 @@ main {
   padding: 0;
   text-shadow: 2px 2px 4px black;
   color: lightblue;
+  font-weight: bold;
+}
+
+.lightblue{
+  background-color: lightblue;
+  color: black;
+  margin: 10px;
+  padding: 4px;
   font-weight: bold;
 }
 
