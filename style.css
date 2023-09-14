@@ -104,13 +104,18 @@ main {
   padding: 4px;
 }
 
-.cajaFila {
-  display: flex;
+.cajaFila { /* el contenedor de los cards */
+  display: grid;
   flex-direction: row;
   margin: 2px;
   padding: 1px;
   width: auto;
   height: auto;
+  grid-gap: 2px;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(400px, 1fr)
+  ); /* columnas flexibles */
 }
 
 /*.card-body {   ta broken, dsps lo fixeo
@@ -161,6 +166,13 @@ main {
   font-weight: bold;
 }
 
+.btn {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /*.flex-container {
   display: flex;
   /flex-direction: row-reverse;
@@ -181,6 +193,9 @@ main {
   .contenedor-grid {
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
   }
+  .cajaFila {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
 }
 
 @media (max-width: 480px) {
@@ -190,6 +205,10 @@ main {
   .contenedor-grid {
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
   }
+  .cajaFila {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+
 }
 
 footer {
