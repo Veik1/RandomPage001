@@ -130,12 +130,15 @@ main {
 }
 
 .card-body{
+  width: auto;
+  height: auto;
   top: 50%;
   left: 50%;
   margin: 0 auto;
 }
 
 .card-body img {
+  width: auto;
   height: auto;
   max-width: 170px;
 }
